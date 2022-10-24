@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Charla temática</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Sebastián Massa Slimming" />
+    <meta name="date" content="2022-10-23" />
+    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+class: left, middle, bg_karl1, h1
+## Retos y desafíos de la sociología
+
+### Sebastián Massa Slimming
+### 24 de octubre 2022
+
+&lt;img src= "Images/logo_3.png" width = "330" height = "150"&gt;
+
+&lt;style type="text/css"&gt;
+.bg_karl1 {
+  position: relative;
+  z-index: 1;
+}
+
+.bg_karl1::before {    
+      content: "";
+      background-image: url('https://images.theconversation.com/files/490334/original/file-20221018-4769-ep7hqv.gif?ixlib=rb-1.1.0&amp;q=45&amp;auto=format&amp;w=1200&amp;h=900.0&amp;fit=crop');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.9;
+      z-index: -1;
+}
+
+.h1 {
+  color: white;
+   font-size: 100%;
+  text-shadow: 1px 1px 6px black, 0 0 25px blue, 0 0 5px darkblue
+}
+
+&lt;/style&gt;
+
+---
+
+class: middle center bg_karl6 h6
+
+# Contexto general
+
+&lt;style type="text/css"&gt;
+
+.bg_karl6 {
+  position: relative;
+  z-index: 1;
+}
+
+.bg_karl6::before {    
+      content: "";
+      background-image: url('https://funnel.mx/wp-content/uploads/2019/09/big-data-1.gif');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.9;
+      z-index: -1;
+}
+
+.h6 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+&lt;/style&gt;
+---
+class: middle center bg_karl19 h19
+
+# Hipótesis 
+
+&lt;style type="text/css"&gt;
+
+.bg_karl19 {
+  position: relative;
+  z-index: 1;
+}
+
+.bg_karl19::before {    
+      content: "";
+      background-image: url('http://static1.squarespace.com/static/57335c76e32140da77fac25e/57347375746fb911dba9ac3e/578a455ae58c62ac648f007b/1504631917337/anigif_longform-original-9187-1446141993-6.gif?format=1500w');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.9;
+      z-index: -1;
+}
+
+.h19 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+&lt;/style&gt;
+
+
+
+---
+class: right, middle, inverse
+# 1. ¿Dónde podemos aportar?
+
+
+&lt;style type="text/css"&gt;
+.inverse {
+  background-color: #272822;
+  color: #d6d6d6;
+  text-shadow: 0 0 20px #333;
+}
+&lt;/style&gt;
+
+---
+
+# Aplicaciones de [text mining]()
+
+
+![](Images/luther_king.jpeg)
+]
+
+
+
+---
+# Aplicaciones de [text mining]()
+
+![](Images/boric.png)
+
+---
+# Aplicaciones de [text mining]()
+
+![](Images/kast2.png)
+---
+
+.pull-left[
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; cor_kast$ilegales &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; inmigrantes &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.62 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; antofagasta; &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.55 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; iquique &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.55 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; acelere &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.52 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; arica, &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.52 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; desplazamiento &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.52 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; fronterizas &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.52 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; habilitados; &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.52 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; sur. &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.52 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; traslado &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.45 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; fronterizos &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.38 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; migrantes &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.36 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; ilegalmente &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.36 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; proceder &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.36 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; ponerle &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.30 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; concreto &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.30 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+.pull-right[
+&lt;img src = "https://i2.wp.com/partidorepublicanodechile.cl/wp-content/uploads/2020/03/KAST-SOLO-HOME.png?fit=550%2C700&amp;ssl=1"&gt;
+
+]
+---
+class: right bg_karl14 h14
+# Análisis de sentimiento
+
+&lt;style type="text/css"&gt;
+
+.bg_karl14 {
+  position: relative;
+  z-index: 1;
+}
+
+.bg_karl14::before {    
+      content: "";
+      background-image: url('https://www.rcharlie.com/images/blog/fitter-happier/fitter_happier_gif.gif');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.9;
+      z-index: -1;
+}
+
+.h14 {
+  color: black;
+  text-shadow: 2px 2px 4px white;
+}
+
+&lt;/style&gt;
+
+
+---
+class: right middle bg_karl10 h10
+# Investigación de mercados
+
+&lt;style type="text/css"&gt;
+
+.bg_karl10 {
+  position: relative;
+  z-index: 1;
+}
+
+.bg_karl10::before {    
+      content: "";
+      background-image: url('https://www.rcharlie.com/images/blog/coachellar/3dplot.gif');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.9;
+      z-index: -1;
+}
+
+.h10 {
+  color: black;
+  text-shadow: 2px 2px 4px white;
+}
+
+&lt;/style&gt;
+
+---
+class: middle center bg_karl7 h7
+# Aplicaciones web 
+
+&lt;style type="text/css"&gt;
+
+.bg_karl7 {
+  position: relative;
+  z-index: 1;
+}
+
+.bg_karl7::before {    
+      content: "";
+      background-image: url('https://livevox.com/wp-content/uploads/2022/01/BI-and-Performance-Analytics2.gif');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.9;
+      z-index: -1;
+}
+
+.h7 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+&lt;/style&gt;
+
+
+---
+
+# Técnicas de [web scrapping]()
+
+&lt;img src = "https://camo.githubusercontent.com/92a9da4ee2c1e2166e9f8321378c94fa079ea335c569b644f15de62515ad35b1/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a796c6772444443624d4f706731556b385661627641772e676966" height = "480" width = "900" &gt;
+
+---
+# Técnicas de [web scrapping]()
+
+&lt;img src="https://omdena.com/wp-content/uploads/2022/03/Inspect-Web-Pages-HTML.gif" style="border: 0; width: 100%; height: 80%"&gt;
+
+---
+
+# Aplicaciones de [text mining]()
+
+
+
+&lt;img src = "https://images.squarespace-cdn.com/content/v1/6078e332d6af970bb7b95e6f/1626362600133-4VVHVFP2PX2JBC7SDS05/Gabriel+Boric.png"&gt;
+
+
+
+---
+# Técnicas de [análisis multivariado]()
+![](Images/AC.png)
+---
+
+# Simulación matemática con [iteraciones]()
+
+&lt;iframe src="datable.html" style="border: 0; width: 100%; height: 60%""&gt;&lt;/iframe&gt;
+
+---
+
+# Línea de código previa
+
+
+```r
+Simulacion_electoral &lt;- function (votos, listas, n_escanos) {
+  divisor.mat &lt;- sum(votos)/sapply(votos, "/", seq(1, n_escanos, 1))
+  colnames(divisor.mat) &lt;- listas
+  m.mat &lt;- tidyr::gather(as.data.frame(divisor.mat), key = "nombre", 
+                         value = "valor", everything())
+  m.mat &lt;- m.mat[rank(m.mat$valor, ties.method = "random") &lt;= 
+                 n_escanos,]
+  rle.escanos &lt;- rle(as.character(m.mat$nombre))
+  if (sum(rle.escanos$length) != n_escanos) 
+    stop(paste("Número de asientos distribuidos no es igual a", 
+               n_escanos)) 
+  rle.escanos$length
+      }
+
+Simulacion_electoral(votos = c(340000, 280000,160000), 
+                     listas = c("Lista A", "Lista B", "Lista C"),
+                     n_escanos = 7)
+```
+
+```
+## [1] 3 3 1
+```
+
+---
+# Aplicaciones de [geolocalización]()
+
+&lt;img src="Images/permisos.png"&gt;
+
+---
+
+# Aplicaciones de [análisis de redes]()
+
+&lt;iframe src="highchart.html" style="border: 0; width: 100%; height: 80%""&gt;&lt;/iframe&gt;
+
+---
+
+class: right, middle, inverse
+# 2. ¿Qué retos tenemos hoy?
+
+
+&lt;style type="text/css"&gt;
+.inverse {
+  background-color: #272822;
+  color: #d6d6d6;
+  text-shadow: 0 0 20px #333;
+}
+&lt;/style&gt;
+
+---
+
+class: middle center bg_karl18 h18
+
+&lt;style type="text/css"&gt;
+
+.bg_karl18 {
+  position: relative;
+  z-index: 1;
+}
+
+.bg_karl18::before {    
+      content: "";
+      background-image: url('https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_562,w_1000,x_0,y_0/dpr_2.0/c_limit,w_740/fl_lossy,q_auto/v1507750191/171011-Woodruff-Ackerman-cambridge-russia-scoop-hero_lkkx2o');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.9;
+      z-index: -1;
+}
+
+.h18 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+&lt;/style&gt;
+
+---
+
+class: middle center bg_karl20 h20
+
+&lt;style type="text/css"&gt;
+
+.bg_karl20 {
+  position: relative;
+  z-index: 1;
+}
+
+.bg_karl20::before {    
+      content: "";
+      background-image: url('https://c.tenor.com/yGfc8apeh2UAAAAC/pills-drugs.gif');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.9;
+      z-index: -1;
+}
+
+.h20 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+&lt;/style&gt;
+
+---
+
+class: middle center bg_karl18 h18
+
+&lt;style type="text/css"&gt;
+
+.bg_karl18 {
+  position: relative;
+  z-index: 1;
+}
+
+.bg_karl18::before {    
+      content: "";
+      background-image: url('https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_562,w_1000,x_0,y_0/dpr_2.0/c_limit,w_740/fl_lossy,q_auto/v1507750191/171011-Woodruff-Ackerman-cambridge-russia-scoop-hero_lkkx2o');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 20px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 1;
+      z-index: -1;
+}
+
+.h18 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+&lt;/style&gt;
+
+---
+
+class: middle center bg_karl21 h21
+
+&lt;style type="text/css"&gt;
+
+.bg_karl21 {
+  position: relative;
+  z-index: 1;
+}
+
+.bg_karl21::before {    
+      content: "";
+      background-image: url('https://i0.wp.com/youarenotsosmart.com/wp-content/uploads/2013/05/bomberhit.gif');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 1;
+      z-index: -1;
+}
+
+.h21 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+&lt;/style&gt;
+
+---
+class: middle center bg_karl21 h21
+
+&lt;img src = "https://esikigai.com/wp-content/uploads/2021/07/Captura-de-pantalla-2021-07-25-a-las-9.55.28.png" width = "600" height = "400"&gt;
+
+&lt;style type="text/css"&gt;
+
+.bg_karl21 {
+  position: relative;
+  z-index: 1;
+}
+
+.bg_karl21::before {    
+      content: "";
+      background-image: url('https://i0.wp.com/youarenotsosmart.com/wp-content/uploads/2013/05/bomberhit.gif');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 1;
+      z-index: -1;
+}
+
+.h21 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+&lt;/style&gt;
+
+---
+class: center, middle, inverse, h5, bg_karl5
+# Conclusiones
+
+&lt;style type="text/css"&gt;
+
+.bg_karl2 {
+  position: relative;
+  z-index: 1;
+}
+
+.bg_karl2::before {    
+      content: "";
+      background-image: url('https://cdn.dribbble.com/users/31818/screenshots/5054596/gif-dribb.gif');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.9;
+      z-index: -1;
+}
+
+.h3 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+&lt;/style&gt;
+
+---
+
+class: center, middle, bg_karl26, h6
+
+# Los datos necesitan de la teoría para poder ser interpretados. 
+
+&lt;style type="text/css"&gt;
+
+.bg_karl26 {
+  position: relative;
+  z-index: 1;
+}
+
+.bg_karl26::before {    
+      content: "";
+      background-image: url('https://www.bu.edu/files/2019/06/DataScience-Header.gif');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.9;
+      z-index: -1;
+}
+
+.h26 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+&lt;/style&gt;
+
+
+---
+
+class: center, middle, bg_karl25, h25
+
+# En las dinámicas organizacionales, la conformación de equipos multidisciplinarios es muy útil.
+
+&lt;style type="text/css"&gt;
+
+.bg_karl25 {
+  position: relative;
+  z-index: 1;
+}
+
+.bg_karl25::before {    
+      content: "";
+      background-image: url('https://frogdesign.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2020/11/24175415/20_Design-Mind_GDPR_Header-final.gif');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.9;
+      z-index: -1;
+}
+
+.h25 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+&lt;/style&gt;
+
+---
+
+class: center, middle
+# ¡Gracias!
+
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create();
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
